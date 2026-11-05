@@ -46,6 +46,12 @@ $left-gutter: 64px;
         }
     }
 
+    /* The edit composer wrapper is the body slot child, which the shared EventTileView clips.
+       Keep it visible so the emoji/mention autocomplete can render above the composer. */
+    .mx_EditMessageComposerWrapper {
+        overflow: visible;
+    }
+
     .mx_EventTile_searchHighlight {
         background-color: $accent;
         color: $accent-fg-color;
